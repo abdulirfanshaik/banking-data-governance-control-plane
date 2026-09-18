@@ -234,7 +234,8 @@ def _write_database(path: Path, datasets, columns, lineage, grants, identities, 
             "access_review": access_review,
         }.items():
             fields = list(rows[0].keys())
-            connection.execute(f'CREATE TABLE "{table_name}" ({", ".join(f"\"{field}\" TEXT" for field in fields)})')
+                      column_definitions = ", ".join(f'"{field}" TEXT' for field in fields)
+            connection.execute(f'CREATE TABLE "{table_name}" ({column_definitions})')
             connection.executemany(
                 f'INSERT INTO "{table_name}" VALUES ({", ".join("?" for _ in fields)})',
                 [[str(row.get(field, "")) for field in fields] for row in rows],
