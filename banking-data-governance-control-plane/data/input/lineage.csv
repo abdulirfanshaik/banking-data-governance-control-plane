@@ -1,0 +1,13 @@
+source_dataset,target_dataset,transformation
+raw.core_customer,curated.customer_360,customer standardization
+raw.account_master,curated.customer_360,account relationship enrichment
+raw.card_authorization,curated.payment_activity,payment standardization
+raw.account_master,curated.account_balances,balance standardization
+curated.customer_360,curated.risk_features,customer risk enrichment
+curated.payment_activity,curated.risk_features,payment behavior features
+curated.customer_360,reporting.customer_service_view,service projection
+curated.account_balances,reporting.customer_service_view,account service projection
+curated.risk_features,reporting.risk_portfolio,portfolio aggregation
+curated.account_balances,reporting.executive_kpis,financial aggregation
+curated.customer_360,sandbox.campaign_analysis,approved de-identified export
+missing.legacy_customer,sandbox.unowned_customer_copy,unregistered legacy copy

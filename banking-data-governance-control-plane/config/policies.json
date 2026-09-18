@@ -1,0 +1,25 @@
+{
+  "as_of_date": "2026-09-18",
+  "classification_rank": {
+    "PUBLIC": 0,
+    "INTERNAL": 1,
+    "CONFIDENTIAL": 2,
+    "RESTRICTED": 3
+  },
+  "role_max_classification": {
+    "PUBLIC_READER": "PUBLIC",
+    "BUSINESS_ANALYST": "INTERNAL",
+    "RISK_ANALYST": "CONFIDENTIAL",
+    "COMPLIANCE_ANALYST": "RESTRICTED",
+    "DATA_ENGINEER": "RESTRICTED",
+    "PLATFORM_ADMIN": "RESTRICTED",
+    "DATA_CERTIFIER": "CONFIDENTIAL"
+  },
+  "masking_required_for": ["RESTRICTED"],
+  "maximum_inactivity_days": 90,
+  "forbidden_role_pairs": [
+    ["PLATFORM_ADMIN", "DATA_CERTIFIER"]
+  ],
+  "lineage_required_layers": ["CURATED", "REPORTING"]
+}
+

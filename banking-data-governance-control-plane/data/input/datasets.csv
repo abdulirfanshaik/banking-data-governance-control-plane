@@ -1,0 +1,13 @@
+dataset_name,domain,layer,classification,owner_team,retention_days,certified
+raw.core_customer,CUSTOMER,RAW,RESTRICTED,Customer Data Office,2555,N
+raw.card_authorization,PAYMENTS,RAW,RESTRICTED,Payments Data,2555,N
+raw.account_master,ACCOUNTS,RAW,RESTRICTED,Core Banking Data,2555,N
+curated.customer_360,CUSTOMER,CURATED,RESTRICTED,Customer Data Office,1825,Y
+curated.payment_activity,PAYMENTS,CURATED,CONFIDENTIAL,Payments Data,1825,Y
+curated.account_balances,ACCOUNTS,CURATED,CONFIDENTIAL,Core Banking Data,2555,Y
+curated.risk_features,RISK,CURATED,CONFIDENTIAL,Risk Data Office,1825,Y
+reporting.customer_service_view,CUSTOMER,REPORTING,RESTRICTED,Customer Operations,365,Y
+reporting.risk_portfolio,RISK,REPORTING,CONFIDENTIAL,Risk Data Office,2555,Y
+reporting.executive_kpis,FINANCE,REPORTING,INTERNAL,Finance Analytics,730,Y
+sandbox.campaign_analysis,CUSTOMER,SANDBOX,INTERNAL,Marketing Analytics,90,N
+sandbox.unowned_customer_copy,CUSTOMER,SANDBOX,RESTRICTED,,30,N

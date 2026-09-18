@@ -1,0 +1,7 @@
+identity_id,display_name,roles
+USR-001,Data Engineer A,DATA_ENGINEER
+USR-002,Risk Analyst A,RISK_ANALYST
+USR-003,Compliance Analyst A,COMPLIANCE_ANALYST
+USR-004,Control Administrator,PLATFORM_ADMIN|DATA_CERTIFIER
+USR-005,Business Analyst A,BUSINESS_ANALYST
+SVC-001,Pipeline Service,DATA_ENGINEER

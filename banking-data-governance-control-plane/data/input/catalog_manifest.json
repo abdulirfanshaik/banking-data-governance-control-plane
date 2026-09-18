@@ -1,0 +1,8 @@
+{
+  "access_grants": 12,
+  "columns": 96,
+  "datasets": 12,
+  "identities": 6,
+  "lineage_edges": 12,
+  "synthetic_data": true
+}
